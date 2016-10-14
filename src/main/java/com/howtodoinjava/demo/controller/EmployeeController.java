@@ -18,6 +18,7 @@ public class EmployeeController
 	@RequestMapping(value = "/getAllEmployees2", method = RequestMethod.GET)
 	public String getAllEmployees(Model model)
 	{
+		//Test for commit
 		model.addAttribute("employees1", manager.getAllEmployees());
 		
 		return "employeesListDisplay";
